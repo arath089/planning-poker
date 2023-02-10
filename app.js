@@ -25,7 +25,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, "public")));
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 80;
 app.set("port", PORT);
 app.listen(
   PORT,
