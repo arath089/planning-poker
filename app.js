@@ -25,8 +25,8 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, "public")));
-
-app.set("port", process.env.PORT || 3000);
+const PORT = process.env.PORT || 3000;
+app.set("port", PORT);
 app.listen(
   PORT,
   console.log(`Server started on port ${PORT}. http://localhost:${PORT}`)
