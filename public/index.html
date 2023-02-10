@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/styles/custom.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.lordicon.com/ritcuqlt.js"></script>
+  </head>
+  <body>
+    <div>
+      <h3>Planning Poker</h3>
+      <div class="icon-wrapper">
+        <lord-icon
+          src="https://cdn.lordicon.com/ptzyuaia.json"
+          trigger="loop"
+          colors="outline:#121331,primary:#f24c00,secondary:#ffc738"
+          state="loop"
+          style="width: 100px; height: 100px"
+        >
+        </lord-icon>
+        <lord-icon
+          src="https://cdn.lordicon.com/xxdqfhbi.json"
+          trigger="loop"
+          style="width: 100px; height: 100px"
+          class="confetti"
+        >
+        </lord-icon>
+        <lord-icon
+          src="https://cdn.lordicon.com/abkxerbf.json"
+          trigger="loop"
+          delay="2000"
+          style="width: 100px; height: 100px"
+        >
+        </lord-icon>
+        <lord-icon
+          src="https://cdn.lordicon.com/gowvgfsi.json"
+          trigger="loop"
+          delay="1000"
+          style="width: 100px; height: 100px"
+        >
+        </lord-icon>
+      </div>
+    </div>
+
+    <form class="form" id="main-form">
+      <input
+        type="text"
+        require
+        id="voter_name"
+        class="form_style"
+        placeholder="Name"
+      />
+      <input
+        type="number"
+        id="estimation"
+        class="form_style"
+        min="1"
+        max="10"
+        placeholder="Estimation"
+      />
+      <input
+        type="submit"
+        id="submit"
+        class="form_style submit-button"
+        value="Submit"
+      />
+    </form>
+    <form>
+      <input
+        type="submit"
+        id="results-submit"
+        class="form_style submit-button results-button"
+        value="See Results"
+      />
+    </form>
+    <script src="/js/api.js"></script>
+    <script src="/js/form.js"></script>
+  </body>
+</html>
