@@ -9,7 +9,7 @@ const pollsRouter = require("./routes/polls");
 
 dotenv.config({ path: path.resolve(__dirname, "./.env") });
 async function initDB() {
-  // This will create an new instance of "MongoMemoryServer" and automatically start it
+  mongoose.set("strictQuery", true);
   mongoose.connect(process.env.DATABASE, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
